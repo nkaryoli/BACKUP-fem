@@ -1,8 +1,5 @@
 import { Layout } from '../../../components/Layout/Layout'
 import { Link } from "react-router-dom";
-import CarouselContactHome from '../components/CarouselContactHome'
-import CardsEventsHome from '../components/CardsEventsHome'
-import ValuesCardsHome from '../components/ValuesCardsHome';
 import { styles } from "../../../style";
 
 
@@ -26,7 +23,7 @@ const HomePage = () => {
       <section className='h-screen w-full flex justify-center items-center px-24 mt-8 mb-8'>
         <div className='flex flex-col items-center'>
           <h1 className='text-6xl font-bold text-secondary font-headerText mb-16'>¡Próximos eventos!</h1>
-          <CardsEventsHome />
+
           <Link to="/eventos"><p className='text-xl font-bold text-secondary font-headerText py-2 my-4 hover:border-b-2 border-tertiary'>Ver todos los eventos</p></Link>
         </div>
       </section>
@@ -35,14 +32,14 @@ const HomePage = () => {
         <div className='flex flex-col items-center'>
           <h1 className="text-6xl font-bold text-primary font-headerText pb-2">En FemCoders Club </h1>
           <p className="text-2xl text-primary font-bodyText pb-12">Somos un vibrante equipo de mujeres apasionadas por la tecnologia y el desarrollo web</p>
-          <ValuesCardsHome />
+
           <p className="text-2xl text-primary font-headerText pt-12">FRASE CÉLEBRE DE UNA MUJER IMPORTANTE EN LA TECNOLOGÍA</p>
           <Link to="/sobrenosotras"><p className='text-2xl text-primary font-bodyText flex justify-center items-center hover:border-b-2 border-primary'>Ver más</p></Link>
         </div>
       </section>
 
       <section className='h-screen w-full mb-24 mt-24 px-24'>
-        <CarouselContactHome />
+
       </section>
 
 
